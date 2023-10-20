@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playercontrol : MonoBehaviour
 {
-    public float speed = 8;
+    public float speed = 3;//初期スピードを3に設定;
 
     float vx = 0;
     float vy = 0;
