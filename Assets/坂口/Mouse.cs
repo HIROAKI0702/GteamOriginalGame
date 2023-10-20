@@ -4,55 +4,39 @@ using UnityEngine;
 
 public class Mouse : MonoBehaviour
 {
-    private bool isObjectSelected = false;//オブジェクトを選択しているかどうか
-    private Transform selectedObject;//選択されたオブジェクトのTransform
+    private bool isObjectSelected = false;
     private Rigidbody2D rb2D; // 2DオブジェクトのRigidbody2Dコンポーネント
+    private new Collider2D collider2D; // 2DオブジェクトのCollider2Dコンポーネント
 
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        this.GetComponent<BoxCollider2D>();
-
-        //マウスの左ボタンがクリックされた場合
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray=Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            //クリックした位置にオブジェクトがあるかどうかをチェック
-            if(Physics.Raycast(ray, out hit))
-            {
-                //オブジェクトがクリックされた場合
-                if(hit.collider.gameObject.CompareTag("SelectableObject"))
-                {
-                    isObjectSelected = true;
-                    selectedObject = hit.collider.transform;
-                }
-            }
-        }
-
-        //マウスの左ボタンが離された場合
-        if (Input.GetMouseButtonUp(0))
-        {
-            if(isObjectSelected)
-            {
-                isObjectSelected = false;
-                selectedObject = null;
-            }
-        }
-
-        //オブジェクトが選択されている場合、マウスの移動に応じてオブジェクトをドラッグ
-        if(isObjectSelected)
-        {
-            float distanceToCamera = Vector3.Distance(selectedObject.position, Camera.main.transform.position);
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distanceToCamera));
-            selectedObject.position = targetPosition;
-        }
+        rb2D = GetComponent<Rigidbody2D>();
+        collider2D = GetComponent<Collider2D>();
     }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
+            if (hit.collider != null && hit.collider.gameObject.CompareTag("SelectableObject"))
+            {
+                isObjectSelected = true;
+                rb2D.velocity = Vector2.zero;
+            }
+        }
 
-    
+        if (Input.GetMouseButtonUp(0))
+        {
+            isObjectSelected = false;
+        }
 
+        if (isObjectSelected)
+        {
+            Vector2 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            rb2D.MovePosition(targetPosition);
+        }
+    }
 }
