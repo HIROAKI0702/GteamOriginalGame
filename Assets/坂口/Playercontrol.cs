@@ -14,22 +14,16 @@ public class Playercontrol : MonoBehaviour
     void Update()
     {
         vx = 0;
-        vy = 0;
-        if (Input.GetKey("right"))
-        {
-            vx = speed;
-            leftFlag = false;
-        }
-        if (Input.GetKey("left"))
-        {
-            vx = -speed;
-            leftFlag = true;
-        }
+        vy = 0; 
+
+        vx = speed;
+        leftFlag = false;
+        
     }
 
     void FixedUpdate()
     {
         this.transform.Translate(vx / 50, vy / 50, 0);
-        this.GetComponent<SpriteRenderer>().flipX = leftFlag;
+        //this.GetComponent<SpriteRenderer>().flipX = leftFlag;
     }
 }
