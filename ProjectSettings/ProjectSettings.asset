@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
-  productGUID: 0d7d7fcddce4bcb44aa39036bd42da7e
+  productGUID: 829e4af8cd8d44b4e9a13324066e2f50
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: "G\u73ED\u30AA\u30EA\u30B8\u30CA\u30EB\u30B2\u30FC\u30E0\u5236\u4F5C"
+  productName: "G\u30C1\u30FC\u30E0\u30B2\u30FC\u30E0"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
