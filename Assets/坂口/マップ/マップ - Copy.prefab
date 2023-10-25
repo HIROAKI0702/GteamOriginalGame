@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 6881306226233815287}
   - component: {fileID: 8603645180526354784}
   m_Layer: 0
-  m_Name: "\u30DE\u30C3\u30D7"
+  m_Name: "\u30DE\u30C3\u30D7 - Copy"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
