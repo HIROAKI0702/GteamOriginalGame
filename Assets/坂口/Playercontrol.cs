@@ -24,13 +24,12 @@ public class Playercontrol : MonoBehaviour
         float bottomY = Camera.main.transform.position.y
                         - Camera.main.orthographicSize * 2;
 
-        //忍者のY座標がbottomYより低い
+        //プレイヤーのY座標がbottomYより低い
         if (gameObject.transform.position.y < bottomY)
         {
             int sceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(sceneIndex);
         }
-
     }
 
     void FixedUpdate()
