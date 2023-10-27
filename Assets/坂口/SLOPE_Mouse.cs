@@ -17,9 +17,9 @@ public class SLOPE_Mouse : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         collider2D = GetComponent<PolygonCollider2D>();
-        collider2D = GetComponent<TilemapCollider2D>();
+        collider2D = GetComponent<BoxCollider2D>();
 
-        Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), GetComponent<TilemapCollider2D>());
+        Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), GetComponent<PolygonCollider2D>());
     }
 
     void Update()

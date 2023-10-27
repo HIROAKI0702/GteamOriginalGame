@@ -22,7 +22,7 @@ public class Playercontrol : MonoBehaviour
 
         //このY座標より下へ落ちたらスタートへ戻る
         float bottomY = Camera.main.transform.position.y
-                        - Camera.main.orthographicSize * 2;
+                            - Camera.main.orthographicSize * 2;
 
         //プレイヤーのY座標がbottomYより低い
         if (gameObject.transform.position.y < bottomY)
@@ -30,6 +30,8 @@ public class Playercontrol : MonoBehaviour
             int sceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(sceneIndex);
         }
+
+
     }
 
     void FixedUpdate()
@@ -37,9 +39,6 @@ public class Playercontrol : MonoBehaviour
         this.transform.Translate(vx / 50, vy / 50, 0);
         //this.GetComponent<SpriteRenderer>().flipX = leftFlag;
     }
+    
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
 }

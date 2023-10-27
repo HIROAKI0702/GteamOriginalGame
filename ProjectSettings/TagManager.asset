@@ -7,6 +7,7 @@ TagManager:
   - SelectableObject
   - Block
   - Slope
+  - Block2
   layers:
   - Default
   - TransparentFX
@@ -18,11 +19,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - block
+  - slope
+  - map
+  - block2
+  - WALL
   - 
   - 
   - 
