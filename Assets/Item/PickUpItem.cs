@@ -3,8 +3,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PickUpItem : MonoBehaviour
 {
+    public Image icon;
+    public GameObject removeButton;
+
     //ItemÉfÅ[É^Çì¸ÇÍÇÈ
     public Item item;
+    
+
 
     void Start()
     {
@@ -16,6 +21,12 @@ public class PickUpItem : MonoBehaviour
     public void PickUp()
     {
         Inventry.instance.Add(item);
-        Destroy(gameObject);
+        
+        //if(Input.GetMouseButton(0))
+        //{
+        //    Destroy(gameObject);
+        //}
     }
+
+
 }
