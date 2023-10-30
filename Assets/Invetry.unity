@@ -776,6 +776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2892a8b695f2bd845900a7c96610d016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  removeButton: {fileID: 0}
   item: {fileID: 11400000, guid: 07474ce4253788749ae865dc79609eb6, type: 2}
 --- !u!114 &919394213
 MonoBehaviour:
@@ -923,6 +925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2892a8b695f2bd845900a7c96610d016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 0}
+  removeButton: {fileID: 0}
   item: {fileID: 11400000, guid: 4549dcf83e27d1347a0cd88b3ded6990, type: 2}
 --- !u!114 &947725889
 MonoBehaviour:
@@ -1206,7 +1210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2971371069838106504, guid: 5769f45e6ffc9c544a4351e1ada19d03, type: 3}
       propertyPath: m_Name
-      value: RemoveButton
+      value: removeButton
       objectReference: {fileID: 0}
     - target: {fileID: 5799910595763542844, guid: 5769f45e6ffc9c544a4351e1ada19d03, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1341,6 +1345,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7027541006423719326, guid: b1331195ac763eb40954edc26ed5bce4, type: 3}
+      propertyPath: m_Name
+      value: removeButton(1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1331195ac763eb40954edc26ed5bce4, type: 3}
 --- !u!1001 &8590508694137357607
@@ -1353,6 +1361,10 @@ PrefabInstance:
     - target: {fileID: 34167871617501821, guid: 3de6fd756c690464ebd3fae9e40b21f4, type: 3}
       propertyPath: m_Name
       value: Slot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6776774059941290884, guid: 3de6fd756c690464ebd3fae9e40b21f4, type: 3}
+      propertyPath: m_Name
+      value: removeButton(2)
       objectReference: {fileID: 0}
     - target: {fileID: 7599970848228289578, guid: 3de6fd756c690464ebd3fae9e40b21f4, type: 3}
       propertyPath: m_Pivot.x

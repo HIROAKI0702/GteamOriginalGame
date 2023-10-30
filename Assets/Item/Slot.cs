@@ -29,12 +29,9 @@ public class Slot : MonoBehaviour
     //アイテムの使用ボタン
     public void UseItem()
     {
-        Destroy(item);
 
         if (item == null)
         {
-           
-
             return;
         }
         item.Use();
