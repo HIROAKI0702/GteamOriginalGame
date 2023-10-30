@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-<<<<<<< HEAD
-  - Floor
-=======
-  - SelectableObject
-  - Block
-  - Slope
-  - Block2
->>>>>>> 坂口
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,11 +15,11 @@ TagManager:
   - 
   - 
   - 
-  - block
-  - slope
-  - map
-  - block2
-  - WALL
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
