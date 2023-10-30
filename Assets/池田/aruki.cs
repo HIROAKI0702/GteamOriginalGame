@@ -33,13 +33,13 @@ public class aruki : MonoBehaviour
 
     }
 
-    public void Dead()
-    {
+    //public void Dead()
+    //{
 
-        if ( hp <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
+    //    if ( hp <= 0)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 
 }

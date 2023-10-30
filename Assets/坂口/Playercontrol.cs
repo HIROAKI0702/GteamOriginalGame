@@ -20,16 +20,16 @@ public class Playercontrol : MonoBehaviour
         vx = speed;
         leftFlag = false;
 
-        //このY座標より下へ落ちたらスタートへ戻る
-        float bottomY = Camera.main.transform.position.y
-                            - Camera.main.orthographicSize * 2;
+        ////このY座標より下へ落ちたらスタートへ戻る
+        //float bottomY = Camera.main.transform.position.y
+        //                    - Camera.main.orthographicSize * 2;
 
-        //プレイヤーのY座標がbottomYより低い
-        if (gameObject.transform.position.y < bottomY)
-        {
-            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(sceneIndex);
-        }
+        ////プレイヤーのY座標がbottomYより低い
+        //if (gameObject.transform.position.y < bottomY)
+        //{
+        //    int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //    SceneManager.LoadScene(sceneIndex);
+        //}
 
 
     }
@@ -39,6 +39,7 @@ public class Playercontrol : MonoBehaviour
         this.transform.Translate(vx / 50, vy / 50, 0);
         //this.GetComponent<SpriteRenderer>().flipX = leftFlag;
     }
+
     
 
 }
