@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Floor
+=======
+  - player
+  - GameOver
+>>>>>>> GteamOriginalGame/main
   layers:
   - Default
   - TransparentFX
@@ -12,13 +17,13 @@ TagManager:
   - 
   - Water
   - UI
+  - "\u30C6\u30AD\u30B9\u30C8"
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - "\u80CC\u666F"
+  - START
   - 
   - 
   - 
@@ -41,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 2336428643
     locked: 0
