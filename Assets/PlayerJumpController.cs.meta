@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/PlayerJumpController.cs.meta
 guid: bc0f2e14a28501b419c452b2985803a4
+========
+guid: c605c23af48d7654795d9c27e468ff47
+>>>>>>>> 坂口:Assets/BLOCK_Mouse.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

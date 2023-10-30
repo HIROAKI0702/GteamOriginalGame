@@ -4,7 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Floor
+=======
+  - SelectableObject
+  - Block
+  - Slope
+  - Block2
+>>>>>>> 坂口
   layers:
   - Default
   - TransparentFX
@@ -16,11 +23,11 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - block
+  - slope
+  - map
+  - block2
+  - WALL
   - 
   - 
   - 
