@@ -16,21 +16,22 @@ public class GOOL : MonoBehaviour
 
     private void Start()
     {
-        _keikajikann = FindObjectOfType<keikajikann>();
-        _score = _keikajikann.GetSCORE();
+        //_keikajikann = FindObjectOfType<keikajikann>();
+        //_score = _keikajikann.GetSCORE();
     }
 
     //衝突した時
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("a");
         //もし、衝突したものの名前が目標オブジェクトだったら
         if (collision.gameObject.name == targetObjectName)
         {
            
             // scoreの保存
-            //Debug.Log("aaa");
-            PlayerPrefs.SetInt("SUKOA", _keikajikann.GetSCORE());
-            PlayerPrefs.Save();
+            Debug.Log("b");
+            //PlayerPrefs.SetInt("SUKOA", _keikajikann.GetSCORE());
+            //PlayerPrefs.Save();
 
             //シーンを切り換える
             SceneManager.LoadScene(sceneName);

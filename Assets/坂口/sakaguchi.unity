@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 194522600}
   - component: {fileID: 194522598}
   - component: {fileID: 194522605}
-  - component: {fileID: 194522606}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -282,20 +281,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.07450442, y: -0.09876109}
   m_Size: {x: 0.20468871, y: 0.26596117}
   m_Direction: 0
---- !u!114 &194522606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194522597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ddcfd0719ab753488e21eb317154a06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObjectName: Gool
-  sceneName: CLEAR
 --- !u!1 &198473973
 GameObject:
   m_ObjectHideFlags: 0
@@ -10136,6 +10121,7 @@ GameObject:
   - component: {fileID: 1587436330}
   - component: {fileID: 1587436329}
   - component: {fileID: 1587436332}
+  - component: {fileID: 1587436333}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10225,6 +10211,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &1587436333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587436328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9664319c126a5a9468ae374ff6802cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: sakaguchi
 --- !u!1 &1718336230
 GameObject:
   m_ObjectHideFlags: 0
@@ -10385,6 +10384,7 @@ GameObject:
   - component: {fileID: 1799548666}
   - component: {fileID: 1799548665}
   - component: {fileID: 1799548664}
+  - component: {fileID: 1799548668}
   m_Layer: 0
   m_Name: Gool
   m_TagString: Untagged
@@ -10399,7 +10399,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799548663}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -10492,13 +10492,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799548663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.84, y: -2.32, z: 0}
+  m_LocalPosition: {x: 250.4, y: -3.35, z: 0}
   m_LocalScale: {x: 1.4076136, y: 1.5505074, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1799548668
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799548663}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.065295584, y: 0.023711272}
+  m_Size: {x: 0.9665806, y: 1.2325776}
+  m_Direction: 0
 --- !u!1 &2012812067
 GameObject:
   m_ObjectHideFlags: 0

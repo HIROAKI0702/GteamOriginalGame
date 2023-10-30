@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: "Assets/\u6C60\u7530/chap72main.unity"
     guid: 73977bfcaaa78ab47a319390874cc94f
   - enabled: 1
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\u6C60\u7530/GAMEOVER.unity"
     guid: 7623323f0d76b604db6ec109f05015a6
+  - enabled: 1
+    path: "Assets/\u5742\u53E3/sakaguchi.unity"
+    guid: 950a7983f28dbd746aaf4b35adaa620c
   m_configObjects: {}

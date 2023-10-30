@@ -19,7 +19,7 @@ public class BLOCK_Mouse : MonoBehaviour
         collider2D = GetComponent<BoxCollider2D>();
         collider2D = GetComponent<PolygonCollider2D>();
 
-        Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), GetComponent<PolygonCollider2D>());
+        //Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), GetComponent<PolygonCollider2D>());
     }
 
     void Update()
