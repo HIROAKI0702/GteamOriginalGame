@@ -11,13 +11,13 @@ public class GOOL : MonoBehaviour
     public string targetObjectName;//目標オブジェクト名:Inspectorで指定
     public string sceneName;//シーン名:Inspectorで指定
 
-    private keikajikann _keikajikann;
-    private int _score;
+    private result_time _Result_time;
+    private string _score;
 
     private void Start()
     {
-        //_keikajikann = FindObjectOfType<keikajikann>();
-        //_score = _keikajikann.GetSCORE();
+        _Result_time = FindObjectOfType<result_time>();
+        _score = _Result_time.GetSCORE();
     }
 
     //衝突した時
@@ -29,9 +29,9 @@ public class GOOL : MonoBehaviour
         {
            
             // scoreの保存
-            Debug.Log("b");
-            //PlayerPrefs.SetInt("SUKOA", _keikajikann.GetSCORE());
-            //PlayerPrefs.Save();
+            //Debug.Log("b");
+            PlayerPrefs.SetString("SCORE", _Result_time.GetSCORE());
+            PlayerPrefs.Save();
 
             //シーンを切り換える
             SceneManager.LoadScene(sceneName);
