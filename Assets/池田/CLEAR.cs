@@ -6,18 +6,18 @@ using UnityEngine.UI;
 
 public class CLEAR : MonoBehaviour
 {
-    int score;
+    string score;
     public Text SukoaText; 
 
     // Start is called before the first frame update
     void Start()
     {
-        score = PlayerPrefs.GetInt("SUKOA");
+        score = PlayerPrefs.GetString("SCORE");
     }
 
     // Update is called once per frame
     void Update()
     {
-        SukoaText.text = string.Format("Œo‰ßŽžŠÔ{0}•b", score);
+        SukoaText.text = string.Format("Œo‰ßŽžŠÔ{0}", score);
     }
 }

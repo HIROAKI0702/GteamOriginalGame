@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Block
+  - Slope
+  - Block2
+  - player
+  - retry_button
   layers:
   - Default
   - TransparentFX
@@ -11,13 +16,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - block
+  - wall
+  - map
+  - under_line
+  - player
+  - checkpoint
+  - bottom
   - 
   - 
   - 

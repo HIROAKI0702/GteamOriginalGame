@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Playercontrol : MonoBehaviour
 {
+    public string targetObjectName;
     public float speed = 3;//初期スピードを3に設定;
 
     float vx = 0;
@@ -31,7 +32,6 @@ public class Playercontrol : MonoBehaviour
         //    SceneManager.LoadScene(sceneIndex);
         //}
 
-
     }
 
     void FixedUpdate()
@@ -40,6 +40,11 @@ public class Playercontrol : MonoBehaviour
         //this.GetComponent<SpriteRenderer>().flipX = leftFlag;
     }
 
-    
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.name == targetObjectName)
+        {
+            Time.timeScale = 0;
+        }
+    }
 }

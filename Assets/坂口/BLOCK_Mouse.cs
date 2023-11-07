@@ -41,7 +41,7 @@ public class BLOCK_Mouse : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isObjectSelected = false;
-            //rb2D.constraints = RigidbodyConstraints2D.FreezeAll;
+            //rb2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         if (isObjectSelected)

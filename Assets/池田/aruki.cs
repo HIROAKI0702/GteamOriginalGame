@@ -10,7 +10,6 @@ public class aruki : MonoBehaviour
     float vx = 0;
     float vy = 0;
     bool leftFlag = false;
-    int hp = 1;
 
     // Update is called once per frame
     void Update()
