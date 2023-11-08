@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TimerScript : MonoBehaviour
 {
 	float elapsedTime;
-	bool counter_flag = false;
+    bool counter_flag = false;
 
 	
 

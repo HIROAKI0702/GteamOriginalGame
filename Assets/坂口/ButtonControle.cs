@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonControle : MonoBehaviour
-{
-    private GameObject Retry_Button;
+{   
+    public GameObject Retry_Button;
+    public GameObject GiveUp_Button;
     public string targetObjectName;
 
     // Start is called before the first frame update
     void Start()
     {
-        Retry_Button = this.gameObject;
-
+        //シーン開始時は表示しない
         Retry_Button.SetActive(false);
+        GiveUp_Button.SetActive(false);        
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == targetObjectName)
+        //もし目標オブジェクトに触れたならオブジェクトを表示する
+        if (collision.gameObject.name == targetObjectName)
         {
             Retry_Button.SetActive(true);
+            GiveUp_Button.SetActive(true);
         }
-    }
+    }   
 }

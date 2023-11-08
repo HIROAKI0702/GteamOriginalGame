@@ -21,11 +21,11 @@ public class Playercontrol : MonoBehaviour
         vx = speed;
         leftFlag = false;
 
-        ////このY座標より下へ落ちたらスタートへ戻る
+        //このY座標より下へ落ちたらスタートへ戻る
         //float bottomY = Camera.main.transform.position.y
         //                    - Camera.main.orthographicSize * 2;
 
-        ////プレイヤーのY座標がbottomYより低い
+        //プレイヤーのY座標がbottomYより低い
         //if (gameObject.transform.position.y < bottomY)
         //{
         //    int sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -42,7 +42,7 @@ public class Playercontrol : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name == targetObjectName)
+        if (collision.gameObject.name == targetObjectName)
         {
             Time.timeScale = 0;
         }
