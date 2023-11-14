@@ -14,7 +14,7 @@ public class Resporn : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("sakaguchi");
+        //SceneManager.LoadScene("sakaguchi");
         Time.timeScale = 1;
     }
 

@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 194522598}
   - component: {fileID: 194522604}
   - component: {fileID: 194522605}
+  - component: {fileID: 194522606}
   m_Layer: 10
   m_Name: Player
   m_TagString: player
@@ -298,6 +299,20 @@ MonoBehaviour:
   Retry_Button: {fileID: 1673843691}
   GiveUp_Button: {fileID: 2085944582}
   targetObjectName: bottom
+--- !u!114 &194522606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194522597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0c335c58e5b1ea49b1bf604702e9e3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Point: {fileID: 488488273}
+  targetObjectName: Check_Point
 --- !u!1 &198473973
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +576,7 @@ GameObject:
   - component: {fileID: 488488275}
   - component: {fileID: 488488274}
   m_Layer: 11
-  m_Name: Theck_Point
+  m_Name: Check_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,8 +668,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488488273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.52, y: 3.5, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 124.53, y: 3.78, z: 0}
+  m_LocalScale: {x: 3.1314, y: 3.1314, z: 1.5657}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1056,7 +1071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893096802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49, y: 5.57, z: 9.098135}
+  m_LocalPosition: {x: -0.68, y: 6.17, z: 9.098135}
   m_LocalScale: {x: 48.169575, y: 0.584375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
