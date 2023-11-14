@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf8ea8ffc93221449d04a52c254fdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sakaguchi: 
+  stage: 
 --- !u!1 &557952703
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf8ea8ffc93221449d04a52c254fdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sakaguchi: sakaguchi
+  stage: sakaguchi
 --- !u!61 &1074900289
 BoxCollider2D:
   m_ObjectHideFlags: 0

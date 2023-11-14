@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;//シーン切り替えに必要
 public class STAGE_select01 : MonoBehaviour
 {
 
-    public string sakaguchi;//シーン名:Inspectorで指定
+    public string stage;//シーン名:Inspectorで指定
 
     void OnMouseDown()
     {
-        SceneManager.LoadScene(sakaguchi);
+        SceneManager.LoadScene(stage);
+        Time.timeScale = 1;
 
     }
 }
