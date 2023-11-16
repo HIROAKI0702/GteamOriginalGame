@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Playercontrol : MonoBehaviour
 {
     public string targetObjectName;
-    public float speed = 3;//‰ŠúƒXƒs[ƒh‚ğ3‚Éİ’è;
+    public string targetObjectName2;
+    public float speed = 3;//åˆæœŸã‚¹ãƒ”ãƒ¼ãƒ‰ã‚’3ã«è¨­å®š;
 
     float vx = 0;
     float vy = 0;
@@ -21,11 +22,11 @@ public class Playercontrol : MonoBehaviour
         vx = speed;
         leftFlag = false;
 
-        //‚±‚ÌYÀ•W‚æ‚è‰º‚Ö—‚¿‚½‚çƒXƒ^[ƒg‚Ö–ß‚é
+        //ã“ã®Yåº§æ¨™ã‚ˆã‚Šä¸‹ã¸è½ã¡ãŸã‚‰ã‚¹ã‚¿ãƒ¼ãƒˆã¸æˆ»ã‚‹
         //float bottomY = Camera.main.transform.position.y
         //                    - Camera.main.orthographicSize * 2;
 
-        //ƒvƒŒƒCƒ„[‚ÌYÀ•W‚ªbottomY‚æ‚è’á‚¢
+        //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®Yåº§æ¨™ãŒbottomYã‚ˆã‚Šä½ã„
         //if (gameObject.transform.position.y < bottomY)
         //{
         //    int sceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -44,7 +45,16 @@ public class Playercontrol : MonoBehaviour
     {
         if (collision.gameObject.name == targetObjectName)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0;    
         }
+        if (collision.gameObject.name == targetObjectName2)
+        {
+            speed = 0;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        vx = speed;
     }
 }

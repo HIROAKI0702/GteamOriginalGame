@@ -6,7 +6,8 @@ public class ButtonControle : MonoBehaviour
 {   
     public GameObject Retry_Button;
     public GameObject GiveUp_Button;
-    public string targetObjectName;
+    public string targetObjectName1;
+    public string targetObjectName2;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,12 @@ public class ButtonControle : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //もし目標オブジェクトに触れたならオブジェクトを表示する
-        if (collision.gameObject.name == targetObjectName)
+        if (collision.gameObject.name == targetObjectName1)
+        {
+            Retry_Button.SetActive(true);
+            GiveUp_Button.SetActive(true);
+        }
+        if(collision.gameObject.name == targetObjectName2)
         {
             Retry_Button.SetActive(true);
             GiveUp_Button.SetActive(true);

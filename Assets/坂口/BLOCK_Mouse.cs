@@ -11,7 +11,6 @@ public class BLOCK_Mouse : MonoBehaviour
     private new Collider2D collider2D; // 2DオブジェクトのCollider2Dコンポーネント
 
     public string item;
-    public float speed = 5;
 
     void Start()
     {
@@ -51,11 +50,4 @@ public class BLOCK_Mouse : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (!isObjectSelected && !objectStop)
-        {
-            transform.Translate(speed / 50, 0, 0);
-        }
-    }
 }
