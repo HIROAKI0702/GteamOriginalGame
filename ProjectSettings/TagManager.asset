@@ -9,6 +9,7 @@ TagManager:
   - Block2
   - player
   - retry_button
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

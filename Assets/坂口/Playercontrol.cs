@@ -8,9 +8,16 @@ public class Playercontrol : MonoBehaviour
     public string targetObjectName;
     public string targetObjectName2;
     public float speed;//初期スピードを3に設定;
-
+    
     float vx = 0;
     float vy = 0;
+
+
+
+    private void Start()
+    {
+      
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,18 +26,6 @@ public class Playercontrol : MonoBehaviour
         vy = 0; 
 
         vx = speed;
-
-        //このY座標より下へ落ちたらスタートへ戻る
-        //float bottomY = Camera.main.transform.position.y
-        //                    - Camera.main.orthographicSize * 2;
-
-        //プレイヤーのY座標がbottomYより低い
-        //if (gameObject.transform.position.y < bottomY)
-        //{
-        //    int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-        //    SceneManager.LoadScene(sceneIndex);
-        //}
-
     }
 
     void FixedUpdate()
@@ -45,5 +40,4 @@ public class Playercontrol : MonoBehaviour
             Time.timeScale = 0;    
         }
     }
-
 }

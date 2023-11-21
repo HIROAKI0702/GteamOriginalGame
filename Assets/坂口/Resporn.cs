@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;//‚±‚Ìs‚ğ’Ç‹L
 
 public class Resporn : MonoBehaviour
 {
+    bool resporn=false;
+
     // Start is called before the first frame update
     void Start()
     {
