@@ -7,11 +7,10 @@ public class Playercontrol : MonoBehaviour
 {
     public string targetObjectName;
     public string targetObjectName2;
-    public float speed = 3;//初期スピードを3に設定;
+    public float speed;//初期スピードを3に設定;
 
     float vx = 0;
     float vy = 0;
-    bool leftFlag = false;
 
     // Update is called once per frame
     void Update()
@@ -20,7 +19,6 @@ public class Playercontrol : MonoBehaviour
         vy = 0; 
 
         vx = speed;
-        leftFlag = false;
 
         //このY座標より下へ落ちたらスタートへ戻る
         //float bottomY = Camera.main.transform.position.y
@@ -38,7 +36,6 @@ public class Playercontrol : MonoBehaviour
     void FixedUpdate()
     {
         this.transform.Translate(vx / 50, vy / 50, 0);
-        //this.GetComponent<SpriteRenderer>().flipX = leftFlag;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -47,14 +44,6 @@ public class Playercontrol : MonoBehaviour
         {
             Time.timeScale = 0;    
         }
-        if (collision.gameObject.name == targetObjectName2)
-        {
-            speed = 0;
-        }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        vx = speed;
-    }
 }

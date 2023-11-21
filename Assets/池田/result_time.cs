@@ -22,6 +22,7 @@ public class TimerScript : MonoBehaviour
 		//	elapsedTime += Time.deltaTime;
 		//	Debug.Log("Œv‘ª’†F " + (elapsedTime).ToString());
 		//}
+
 	}
 
 }
@@ -66,7 +67,6 @@ public class result_time : MonoBehaviour
 
 	public string GetSCORE()
     {
-		
 		return _SCORE;
 	}
 		

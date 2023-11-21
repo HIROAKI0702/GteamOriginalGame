@@ -10,7 +10,8 @@ public class BLOCK_Mouse : MonoBehaviour
     private Rigidbody2D rb2D; // 2DオブジェクトのRigidbody2Dコンポーネント
     private new Collider2D collider2D; // 2DオブジェクトのCollider2Dコンポーネント
 
-    public string item;
+    public string targetObjectName;
+    public float speed = 3.6f;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class BLOCK_Mouse : MonoBehaviour
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
-            if (hit.collider != null && hit.collider.gameObject.CompareTag(item))
+            if (hit.collider != null && hit.collider.gameObject.CompareTag(targetObjectName))
             {
                 isObjectSelected = true;
                 objectStop = true;
@@ -47,6 +48,14 @@ public class BLOCK_Mouse : MonoBehaviour
         {
             Vector2 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             rb2D.MovePosition(targetPosition);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(!isObjectSelected&&!objectStop)
+        {
+            transform.Translate(speed / 50, 0, 0);
         }
     }
 
