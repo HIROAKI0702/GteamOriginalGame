@@ -4,16 +4,16 @@ using System.Collections;
 public class BlockMove : MonoBehaviour
 {
 
-    private Vector3 initialPosition;
+    private Vector3 Position;
     public float speed;
 
     void Start()
     {
-        initialPosition = transform.position;
+        Position = transform.position;
     }
 
     void Update()
     {
-        transform.position = new Vector3(initialPosition.x, Mathf.Sin(Time.time) * speed * initialPosition.y, initialPosition.z);
+        transform.position = new Vector3(Position.x, Mathf.Sin(Time.time) * speed * Position.y, Position.z);
     }
 }

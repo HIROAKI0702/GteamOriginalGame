@@ -565,7 +565,6 @@ GameObject:
   - component: {fileID: 582279530}
   - component: {fileID: 582279525}
   - component: {fileID: 582279529}
-  - component: {fileID: 582279531}
   m_Layer: 6
   m_Name: Block
   m_TagString: Block
@@ -714,19 +713,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &582279531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582279523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d8c370357c6f8f47a838b3bb69c83ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
 --- !u!1 &811097784
 GameObject:
   m_ObjectHideFlags: 0
@@ -16027,6 +16013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7187e6fb4485643866f775facd17c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  retry: 
 --- !u!114 &1587436336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16236,6 +16223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7187e6fb4485643866f775facd17c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  retry: sakaguchi
 --- !u!1 &1718336230
 GameObject:
   m_ObjectHideFlags: 0
